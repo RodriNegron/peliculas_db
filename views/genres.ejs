@@ -1,0 +1,12 @@
+<html>
+    <h1>
+        Listado de Generos
+    </h1>
+    <ul>
+        <% for( let i = 0; i < genres.length; i++ ) { %>
+        <li>
+            <a href="/genres/detail/<%=genres[i].id%> "><%=genres[i].name%> </a>
+        </li>
+        <% } %>
+    </ul>
+</html>

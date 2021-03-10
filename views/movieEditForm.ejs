@@ -1,0 +1,28 @@
+<html>
+    <h1>Editando pelicula <%=movie.title %> </h1>
+    <form action="/movies/edit/<%=movie.id%>?_method=PUT" method="POST">
+        <div>
+            <label for="title">Titulo</label>
+            <input type="text" name="title" value="<%=movie.title%>">
+        </div>
+        <div>
+            <label for="rating">Rating</label>
+            <input type="text" name="rating" value="<%=movie.rating%>">
+        </div>
+        <div>
+            <label for="awards">Premio</label>
+            <input type="text" name="awards" value="<%=movie.awards%>">
+        </div>
+        <div>
+            <label for="length">Duracion</label>
+            <input type="text" name="length" value="<%=movie.length%>">
+        </div>
+        <div>
+            <label for="release_date">Fecha de estreno</label>
+            <input type="date" name="release_date" value="<%=movie.length%>">
+        </div>
+        <div>
+            <button type="submit">Editar</button>
+        </div>
+    </form>
+</html>
